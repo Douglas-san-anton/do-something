@@ -1,0 +1,42 @@
+@import 'vars';
+
+.nav__container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 10rem;
+  border-bottom: 1px solid white;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $--font-size-paragraph;
+  font-family: $--font-primary;
+
+    .nav__ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      gap: 1rem;
+
+      .button {
+        border-radius: $--border-radius;
+        padding: .5rem 1rem;
+        border: none;
+        background: black;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .button:hover {
+        background: opacify($color: #292929, $amount: 0)
+
+      }
+    }
+
+}

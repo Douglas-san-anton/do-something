@@ -1,0 +1,113 @@
+@import 'vars';
+
+.main__container {
+  height: 100vh;
+  background: $--bg-color-primary;
+  font-family: $--font-secondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+    .form__container {
+      width: $--medium-width;
+      position: absolute;
+      left: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+
+        .form__title {
+          font-size: $--font-size-titles;
+          color: white;
+        }
+
+        .input,
+        .button {
+          border-radius: $--border-radius;
+          padding: 1rem;
+          border: none;
+        }
+
+        .button {
+          color: white;
+          background: $--bg-color-button;
+          cursor: pointer;
+          font-weight: 600;
+        }
+
+        .button:hover {
+          background: $--bg-color-button-hover;
+        }
+
+        .link {
+          text-align: start;
+        }
+        .link:hover {
+          text-decoration: underline;
+        }
+
+    }
+
+    .form__container_left {
+      width: $--medium-width;
+      position: relative;
+      left: 30%;
+    }
+
+    .subtitle{
+      font-size: $--font-size-titles;
+
+      p {
+        font-size: $--font-size-paragraph;
+      }
+    }
+
+    ul>li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+      border-bottom: 1px solid black;
+      padding: 5px 0;
+    }
+
+    .delete__button {
+      border-radius: 8px;
+      border: none;
+      padding: .3rem .5rem;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+    }
+    .delete__button:hover {
+      background-color: rgba(255, 0, 0, 0.635);
+      color: black;
+    }
+
+    .ul__container_activities {
+      height: 500px;
+      overflow-y: auto;
+      gap: 1rem;
+      padding: 2rem;
+      width: $--large-width;
+      margin-bottom: .5rem;
+      background: white;
+      border-radius: 15px;
+      margin-top: 5rem;
+    }
+
+    .link {
+      color: white;
+    }
+    .link:hover {
+      text-decoration: underline;
+    }
+
+    .error {
+      font-size: small;
+      color: red;
+    }
+
+}

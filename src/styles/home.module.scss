@@ -1,0 +1,115 @@
+@import 'vars';
+
+.main__container_home{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: $--bg-color-primary;
+  height: 100vh;
+
+  .section__home {
+    position: relative;
+    top: 10rem;
+    left: 10%;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px solid white;
+    height: 500px;
+    width: $--medium-width;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: $--border-radius;
+    color: black;
+    background: white;
+
+    .button {
+      color: white;
+      background: $--bg-color-button;
+      cursor: pointer;
+      border-radius: $--border-radius;
+      padding: 1rem;
+      border: none;
+      font-weight: 600;
+    }
+    .button:hover {
+      background: $--bg-color-button-hover;
+      box-shadow: 0px 2px 4px rgb(206, 206, 206);
+    }
+  }
+
+  .activities_section {
+    position: relative;
+    top: 10rem;
+    right: 10%;
+    gap: 1rem;
+    height: 500px;
+    padding: 2rem;
+    border: 2px solid white;
+    color: black;
+    background: white;
+    width: $--large-width;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: $--border-radius;
+
+    .ul__container {
+      overflow-y: auto;
+      min-height: 250px;
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+
+    .link__button {
+      color: white;
+      font-weight: 600;
+      background: $--bg-color-button;
+      cursor: pointer;
+      border-radius: $--border-radius;
+      padding: 1rem;
+      border: none;
+      text-align: center;
+      font-family: $--font-secondary;
+    }
+
+    .link__button:hover {
+      background: $--bg-color-button-hover;
+      box-shadow: 0px 2px 4px rgb(206, 206, 206);
+    }
+  }
+
+  .subtitle {
+    font-size: $--font-size-titles;
+    font-family: $--font-primary;
+    color: black;
+  }
+
+  p,
+  ul>li {
+    font-family: $--font-secondary;
+  }
+
+  .section__filter {
+    display: flex;
+    justify-content: space-between;
+
+      label {
+        font-family: $--font-secondary;
+        font-weight: 600;
+        margin-right: .3rem;
+      }
+
+      select {
+        border-radius: 5px;
+        background: black;
+        color: white;
+        font-weight: 600;
+      }
+  }
+
+}
