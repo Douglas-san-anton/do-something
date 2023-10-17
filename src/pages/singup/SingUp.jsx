@@ -13,7 +13,7 @@ const SingUp = () => {
   const [name, setName] = useState('');
   const [lastname, setLastname] = useState('');
   const [error, setError] = useState('');
-  const { isEmailValid, isPasswordValid } = useValidation();
+  const { isEmailValid } = useValidation();
 
   const navigate = useNavigate();
   const handleSignUp = () => {
@@ -21,11 +21,6 @@ const SingUp = () => {
 
     if (!isEmailValid(email)) {
       setError('Invalid email format.');
-      return;
-    }
-
-    if (!isPasswordValid(password)) {
-      setError('Password must have at least 6 characters.');
       return;
     }
 

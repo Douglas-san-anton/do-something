@@ -10,18 +10,13 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const { isEmailValid, isPasswordValid } = useValidation();
+  const { isEmailValid } = useValidation();
 
   const navigate = useNavigate();
 
   const handleLogin = () => {
     if (!isEmailValid(email)) {
       setError('Invalid email format.');
-      return;
-    }
-
-    if (!isPasswordValid(password)) {
-      setError('Password must have at least 6 characters.');
       return;
     }
 
