@@ -1,6 +1,7 @@
+const { VITE_APP_API_URL } = import.meta.env
 export async function loadRandomActivity() {
   try {
-    const response = await fetch('http://www.boredapi.com/api/activity');
+    const response = await fetch(VITE_APP_API_URL);
     if (response) {
       const data = await response.json();
       return data;
